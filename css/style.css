@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap");
+:root {
+    --fonte-principal:'Roboto', sans-serif;
+    --fonte-secundaria:'Righteous', cursive;
+}   
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: var(--fonte-principal);
+}
+
+.menu-topo{
+    background-color: #CF2B2B;
+    color: #FFFFFF;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: fixed;
+    top:0;
+
+    width: 100vw;
+    height: 92px;
+    padding-left: 5%;
+}
+
+.menu-topo h1 {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.75rem;
+}
+
+.menu-topo p {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.principal {
+    margin-top: 122px;
+    margin-left: 19px;
+}
+
+.texto-orientacao {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.625rem;
+    color: #333333;
+    margin-top: 30px;
+}
+
+.secao-itens {
+    display: flex;
+    margin-top: 17px;
+    
+    width: 100%;
+    overflow: hidden;
+}
+
+.item {
+    background-color: #FFFFFF;
+    min-width: 172px;
+    height: 216px;
+
+    margin-right: 16px;
+    padding: 18px 14px;
+    border-radius: 9px;
+}
+
+.caixa-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 144px;
+    height: 100%;
+}
+
+.caixa-item img {
+    width: 100%;
+    height: 87px;
+
+    border-radius: 4px;
+}
+
+.caixa-item h3 {
+    font-weight: 700;
+    color: #333333;
+}
+
+.item-descricao {
+    font-size:0.9rem;
+    font-weight: 300;
+    color: #A6A6A6;
+}
+
+.item-valor {
+    font-weight: 400;
+    color: #000000;
+}
+
+.bebida .item {
+    height: 202px;
+}
+
+.sobremesa {
+    margin-bottom: 98px;
+}
+
+.sobremesa .item {
+    height: 197px;
+}
+
+.aguardando-selecao {
+    background-color: #FFFFFF;
+
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 92px;
+}
+
+.aguardando-selecao div {
+    background-color: #CBCBCB;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 364px;
+    height: 61px;
+
+    border-radius: 50px;
+}
+
+.aguardando-selecao div p {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
